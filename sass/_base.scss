@@ -1,0 +1,80 @@
+// FONT
+$font-primary: 'Plus Jakarta Sans', sans-serif;
+$font-secondary: 'DM Mono', monospace;
+
+//COLOR
+$color-base: #FCFCFC;
+$color-font-primary: #292929;
+
+//BREAKPOINTS
+$bp-tablet: 50em; //800px
+$bp-mobile: 31.25em; //500px
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; //10px
+    scroll-behavior: smooth;
+  
+    @media only screen and (max-width: $bp-tablet) {
+      font-size: 56.25%; //9px
+    }
+
+    @media only screen and (max-width: $bp-mobile) {
+      font-size: 50%; //8px
+    }
+}
+  
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $font-primary;
+    font-weight: 400;
+    color: $color-font-primary;
+    line-height: 1.6;
+}
+
+.App {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: min-content;
+  grid-gap: 5rem;
+  background-color: $color-base;
+  padding: 0 8rem;
+
+  @media only screen and (max-width: $bp-mobile) {
+    padding: 0 6rem;
+  }
+}
+
+.gutter {
+    width: 100%;
+    height: 1px;
+    background-color: $color-font-primary;
+}
+
+.loader {
+  position: fixed;
+  inset: 0 0 0 0;
+  display: grid;
+  place-items: center;
+  background-color: $color-base;
+  z-index: 4;
+
+  &__icon {
+    color: $color-font-primary;
+    font-family: $font-secondary;
+    font-size: 4rem;
+    font-weight: 600;
+  }
+}
+
+.fixBody {
+  height: 100%;
+  overflow: hidden;
+}

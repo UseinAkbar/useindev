@@ -1,0 +1,103 @@
+.project {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: min-content;
+    grid-gap: 7rem;
+
+    &__title {
+        font-size: 4.6rem;
+        font-weight: 700;
+    }
+
+    &__box {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: min-content;
+        grid-gap: 6rem;
+    }
+
+    &__main,
+    &__other {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: min-content;
+        align-items: center;
+        grid-gap: 6rem;
+
+        &-banner {
+            width: 100%;;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        &-sub {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-auto-rows: min-content;
+            grid-gap: 2rem;
+        }
+        
+        &-title {
+            font-size: 3rem;
+            font-weight: 600;
+        }
+
+        &-desc {
+            font-size: 2rem;
+            text-align: justify;
+        }
+
+        &-stack {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        &-icon {
+            width: 5rem;
+        }
+
+        &-cta {
+            font-size: 1.6rem;
+
+            
+            &:hover img {
+                width: 2.4rem;
+            }
+
+            @media only screen and (max-width: $bp-mobile) {
+                img {
+                    width: 2.4rem;
+                }
+                
+                justify-self: stretch;
+                justify-content: center;
+            }
+        }
+
+        @media only screen and (max-width: $bp-mobile) {
+            grid-template-columns: 1fr;
+            grid-gap: 4rem;
+        }
+    }
+
+    &__main:nth-child(even) {
+        .project__main-banner {
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+
+        .project__main-sub {
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+
+        @media only screen and (max-width: $bp-mobile) {
+            .project__main-banner,
+            .project__main-sub {
+                grid-column: auto;
+                grid-row: auto;
+            }
+        }
+    }
+}

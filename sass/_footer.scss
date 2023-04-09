@@ -1,0 +1,34 @@
+.footer {
+    display: grid;
+    place-items: center;
+    grid-gap: 2rem;
+    padding: 3rem 0 4rem;
+
+    &__icon:where(:link, :visited) {
+        text-decoration: none;
+        color: $color-font-primary;
+        font-family: $font-secondary;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    &__link {
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    &__img {
+
+    }
+
+    &__note {
+        font-size: 1.6rem;
+        font-weight: 500;
+        opacity: .6;
+    }
+}

@@ -1,0 +1,56 @@
+.nav {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-auto-rows: min-content;
+    justify-content: space-between;
+    padding: 2rem 0;
+    background-color: $color-base;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+
+    &__icon:where(:link, :visited) {
+        text-decoration: none;
+        color: $color-font-primary;
+        font-family: $font-secondary;
+        font-size: 3.2rem;
+        font-weight: 500;
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        
+        & > a:where(:link, :visited) {
+            font-weight: 600;
+            font-size: 1.8rem;
+            text-decoration: none;
+            color: $color-font-primary;
+        }
+
+        @media only screen and (max-width: $bp-mobile) {
+            display: none;
+          }
+    }
+
+    &__project {
+
+    }
+
+    &__work {
+        padding: 1rem 3rem;
+        border-radius: 50px;
+        border: 1.5px solid #292929;
+        transition: .1s ease;
+
+        &:hover {
+            background-color: $color-font-primary;
+            color: $color-base;
+        }
+
+        &:active {
+            transform: scale(.95);
+        }
+    }
+}
