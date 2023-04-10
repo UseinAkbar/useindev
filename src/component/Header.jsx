@@ -2,6 +2,7 @@ import Marquee from 'react-fast-marquee'
 import banner from '../asset/banner.png'
 import download from '../asset/download.png'
 import { skills } from '../data'
+import portfolio from '../Usein Akbar_Front-End Portfolio_2023.pdf'
 
 const Header = () => {
     return (
@@ -21,7 +22,7 @@ const Header = () => {
             <br />
             Overall, I'm a dedicated and passionate front-end developer who is always looking to improve my skills and deliver high-quality applications, so let's work together!
             </p>
-            <a href="#" className="header__cta cta">
+            <a href={portfolio} download={'Usein Akbar_Front-End Portfolio_2023'} className="header__cta cta">
                 <img src={download} alt="" />
                 Download Portfolio
             </a>
