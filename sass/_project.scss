@@ -81,7 +81,7 @@
         }
     }
 
-    &__main:nth-child(even) {
+    &__main:nth-of-type(odd) {
         .project__main-banner {
             grid-column: 2/3;
             grid-row: 1/2;

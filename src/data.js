@@ -4,6 +4,8 @@ import git from '../src/asset/skills/git.png'
 import github from '../src/asset/skills/github.png'
 import javascript from '../src/asset/skills/javascript.png'
 import react from '../src/asset/skills/react.png'
+import vue from '../src/asset/skills/vue.png'
+import tailwind from '../src/asset/skills/tailwind.png'
 import sass from '../src/asset/skills/sass.png'
 import npm from '../src/asset/skills/npm.png'
 import instagram from '../src/asset/instagram.svg'
@@ -16,9 +18,10 @@ import diesnatalis from '../src/asset/diesnatalis.png'
 import weatherio from '../src/asset/weatherio.png'
 import nexter from '../src/asset/nexter.png'
 import twonana from '../src/asset/twonana.png'
+import tvmaze from '../src/asset/vue-tvmaze.png'
 
 
-const skills = [html, css, git, github, javascript, react, sass, npm]
+const skills = [html, css, tailwind, git, github, javascript, react, vue, sass, npm]
 
 class Project {
     constructor(image, title, desc, url, stack) {
@@ -46,6 +49,7 @@ const mainProject = [
 const otherProject = [
     new Project(weatherio, 'Weatherio', 'an API based web apps to track and search different weather in different city.', 'https://weatherio.vercel.app/', [javascript, react, sass]),
     new Project(nexter, 'Nexter', 'Nexter is a website for realtors to promote the houses they sell. This is a course based project from Udemy with some improvements that I made.', 'https://nexter01.netlify.app/', [html, css, javascript, sass]),
+    new Project(tvmaze, 'Vue TV Maze API', 'an API based web apps to display tv programs using TVMaze API.', 'https://vue-tvmaze-api.vercel.app/', [vue, javascript, css]),
     new Project(trading, 'Trading Watcher', 'Trading watcher is a private dashboard created to monitor and adjust crypto coins according to user needs.', '', [javascript, react, sass]),
     new Project(twonana, 'Twonana Portfolio', 'a portfolio website collection of nft assets.', '', [javascript, react, sass])
 ]

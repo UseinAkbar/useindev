@@ -26,6 +26,26 @@
 
     &__cta {
         justify-self: center;
+        font-size: 2.2rem;
+    }
+    
+    &__icon {
+        width: 0;
+        transition: .15s ease;
+
+        @media only screen and (max-width: $bp-mobile) {
+            width: 3rem;
+            transform: rotate(-20deg);
+        }
+    }
+
+    &__cta:hover &__icon {
+        width: 3rem;
+        animation: hands .8s ease-out 1 .15s alternate forwards;
+
+        @media only screen and (max-width: $bp-mobile) {
+            animation: none;
+        }
     }
 
     @media only screen and (max-width: $bp-mobile) {
@@ -33,5 +53,20 @@
             width: unset;
             font-size: 1.6rem;
         }
+    }
+}
+
+@keyframes hands {
+    0% {
+        transform: rotate(0) translateX(0);
+    }
+    40% {
+        transform: rotate(-35deg) translateX(-4px);
+    }
+    80% {
+        transform: rotate(35deg) translateX(4px);
+    }
+    100% {
+        transform: rotate(0) translateX(0);
     }
 }

@@ -1,5 +1,6 @@
 import Marquee from 'react-fast-marquee'
 import banner from '../asset/banner.png'
+import banner_mobile from '../asset/banner_mobile.png'
 import download from '../asset/download.png'
 import { skills } from '../data'
 import portfolio from '../Usein Akbar_Front-End Portfolio_2023.pdf'
@@ -7,9 +8,11 @@ import portfolio from '../Usein Akbar_Front-End Portfolio_2023.pdf'
 const Header = () => {
     return (
         <header className="header">
-            <img src={banner} alt="Usein Akbar" className="header__img" />
+            <img src={banner} alt="Usein Akbar" className="header__img header__img--desktop" />
+            <img src={banner_mobile} alt="Usein Akbar" className="header__img header__img--mobile" />
+            <a href="#myprojects" className="header__nav-project">My Projects</a>
             <div className="gutter"></div>
-            <Marquee className="header__skill" speed={25}>
+            <Marquee className="header__skill" speed={30}>
                 {skills.map((item, i) => {
                     return (
                         <img key={i} src={item} alt="" className="header__skill-img" />
