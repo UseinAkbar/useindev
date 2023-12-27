@@ -3,7 +3,7 @@ import { contacts } from "../data"
 const Footer = () => {
     return (
         <footer className="footer">
-            <a href='#' className="footer__icon">Usein.</a>
+            <a href='/' className="footer__icon">Usein.</a>
             <div className="footer__box">
                 {contacts.map((item, i) => {
                     const {image, url} = item

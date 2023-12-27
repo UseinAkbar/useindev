@@ -45,6 +45,21 @@ body {
   grid-auto-rows: min-content;
   grid-gap: 5rem;
   background-color: $color-base;
+  
+}
+
+section, 
+header, 
+footer {
+  padding: 0 8rem;
+  
+  @media only screen and (max-width: $bp-mobile) {
+    padding: 0 6rem;
+  }
+}
+
+.gutter-box {
+  width: 100%;
   padding: 0 8rem;
 
   @media only screen and (max-width: $bp-mobile) {

@@ -3,10 +3,12 @@
     grid-template-columns: repeat(2, max-content);
     grid-auto-rows: min-content;
     justify-content: space-between;
-    padding: 2rem 0;
+    padding: 2rem 8rem;
     background-color: $color-base;
     position: sticky;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 3;
 
     &__icon:where(:link, :visited) {

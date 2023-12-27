@@ -1,4 +1,5 @@
 import React, { Suspense } from 'react';
+import Gutter from './component/Gutter';
 
 const Navigation = React.lazy(() => import('./component/Navigation'))
 const Header = React.lazy(() => import('./component/Header'))
@@ -13,11 +14,14 @@ const App = () => {
       <Suspense fallback={<Loader />}>
         <Navigation />
         <Header />
-        <div className="gutter"></div>
+        {/* gutter */}
+        <Gutter />
         <Project />
-        <div className="gutter"></div>
+        {/* gutter */}
+        <Gutter />
         <GetInTouch />
-        <div className="gutter"></div>
+        {/* gutter */}
+        <Gutter />
         <Footer />
       </Suspense>
     </div>

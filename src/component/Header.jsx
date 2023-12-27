@@ -2,8 +2,10 @@ import Marquee from 'react-fast-marquee'
 import banner from '../asset/banner.png'
 import banner_mobile from '../asset/banner_mobile.png'
 import download from '../asset/download.png'
+import download_secondary from '../asset/download-secondary.png'
 import { skills } from '../data'
 import portfolio from '../Usein Akbar_Front-End Portfolio_2023.pdf'
+import cv from '../CV_Usein Akbar.pdf'
 
 const Header = () => {
     return (
@@ -20,15 +22,22 @@ const Header = () => {
                 })}
             </Marquee>
             <p className="header__desc">
-            Hello! My name is Usein Akbar and I'm a Front-End Developer. Currently studying at Telkom University majoring in Information Systems. I have the ability to develop responsive and interactive applications, represent UI design in code, and integrate data from APIs.
+            Hello👋 My name is Usein Akbar and I'm a Front-End Developer. Currently studying at Telkom University majoring in Information Systems. I have the ability to develop responsive and interactive applications, represent UI design in code, and integrate data from APIs.
             <br />
             <br />
             Overall, I'm a dedicated and passionate front-end developer who is always looking to improve my skills and deliver high-quality applications, so let's work together!
             </p>
-            <a href={portfolio} download={'Usein Akbar_Front-End Portfolio_2023'} className="header__cta cta">
-                <img src={download} alt="" />
-                Download Portfolio
-            </a>
+            <div className='header__cta-box'>
+                <a href={cv} download={'CV_Usein Akbar'} className="header__cta cta cta-primary">
+                    <img src={download} alt="" />
+                    Download CV
+                </a>
+                <a href={portfolio} download={'Usein Akbar_Front-End Portfolio_2023'} className="header__cta cta cta-secondary">
+                    <img src={download} alt="" className='cta__download-white' />
+                    <img src={download_secondary} alt="" className='cta__download-black' />
+                    Download Portfolio
+                </a>
+            </div>
         </header>
     )
 }

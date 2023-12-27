@@ -8,6 +8,9 @@ import vue from '../src/asset/skills/vue.png'
 import tailwind from '../src/asset/skills/tailwind.png'
 import sass from '../src/asset/skills/sass.png'
 import npm from '../src/asset/skills/npm.png'
+import laravel from '../src/asset/skills/Laravel.png'
+import php from '../src/asset/skills/PHP.png'
+import nextjs from '../src/asset/skills/Nextjs.png'
 import instagram from '../src/asset/instagram.svg'
 import gh from '../src/asset/gh.svg'
 import linkedin from '../src/asset/linkedin.svg'
@@ -19,9 +22,12 @@ import weatherio from '../src/asset/weatherio.png'
 import nexter from '../src/asset/nexter.png'
 import twonana from '../src/asset/twonana.png'
 import tvmaze from '../src/asset/vue-tvmaze.png'
+import gostorage from '../src/asset/gostorage.png'
+import pmbonline from '../src/asset/pmbonline.png'
+import sportgather from '../src/asset/sportgather.png'
 
 
-const skills = [html, css, tailwind, git, github, javascript, react, vue, sass, npm]
+const skills = [html, css, javascript, sass, tailwind, react, vue, nextjs, git, github, npm]
 
 class Project {
     constructor(image, title, desc, url, stack) {
@@ -41,15 +47,18 @@ class Contact {
 }
 
 const mainProject = [
-    new Project(teknofest, 'Teknofest Proclub Web Portal', 'Web portal made for Proclub Telkom University recruitment registration 2022.', 'https://teknofest.proclub.tech/', [javascript, react, sass]),
-    new Project(gurubintang, 'Guru Bintang', 'a MVP product for the development of education and skills for honorary teachers as a condition for the Proclub Telkom University probation phase 2021.', 'https://gurubintang.vercel.app/', [javascript, react, sass]),
-    new Project(diesnatalis, 'Dies Natalis of HIMA Fisika Unpad', 'An anniversary web platform for the Association of Physics Departments, Padjadjaran University.', 'https://unpad-project.vercel.app/', [javascript, react, sass]),
+    new Project(teknofest, 'Teknofest Proclub Web Portal', 'Web portal made for Proclub Telkom University recruitment registration 2022.', 'https://github.com/helloproclub/teknofest-web-fe/tree/master', [javascript, react, sass]),
+    new Project(gurubintang, 'Guru Bintang', 'a MVP product for the development of education and skills for honorary teachers as a condition for the Proclub Telkom University probation phase 2021. Among the features are user and admin auth, course CRUD, course transactions, course access, certificate printing, and course purchase history.', 'https://gurubintang.vercel.app/', [javascript, react, sass]),
+    new Project(diesnatalis, 'Dies Natalis of HIMA Fisika Unpad', 'An anniversary web platform for the Association of Physics Departments, Padjadjaran University. Among the features are live stream & live chat embedded YouTube, journey of association, and exhibition display.', 'https://unpad-project.vercel.app/', [javascript, react, sass]),
 ]
 
 const otherProject = [
-    new Project(weatherio, 'Weatherio', 'an API based web apps to track and search different weather in different city.', 'https://weatherio.vercel.app/', [javascript, react, sass]),
-    new Project(nexter, 'Nexter', 'Nexter is a website for realtors to promote the houses they sell. This is a course based project from Udemy with some improvements that I made.', 'https://nexter01.netlify.app/', [html, css, javascript, sass]),
-    new Project(tvmaze, 'Vue TV Maze API', 'an API based web apps to display tv programs using TVMaze API.', 'https://vue-tvmaze-api.vercel.app/', [vue, javascript, css]),
+    new Project(weatherio, 'Weatherio', 'an API based web apps to track and search different weather in different city. Among the features are weather search by city and weather search based on device location.', 'https://weatherio.vercel.app/', [javascript, react, sass]),
+    new Project(nexter, 'Nexter', 'Nexter is a website for realtors to promote the houses they sell. This is a course based project from Udemy with some UI improvements.', 'https://nexter01.netlify.app/', [html, css, javascript, sass]),
+    new Project(tvmaze, 'Vue TV Maze API', 'an API based website to display tv programs using TVMaze API as an internship challenge assignment.', 'https://vue-tvmaze-api.vercel.app/', [vue, javascript, css]),
+    new Project(gostorage, 'GoStorage', 'GoStorage is a warehouse rental platform created as an initial certification task by BNSP. Among the features are user & admin auth, warehouse rental CRUD, and rental returns.', 'https://github.com/UseinAkbar/LSP-GoStorage', [laravel, php]),
+    new Project(pmbonline, 'PMB Online', 'PMB Online is a simple platform for new student registration created as a practical certification assignment by BNSP. Among the features are user & admin auth, registration CRUD, and registrant CRUD.', 'https://github.com/UseinAkbar/LSP-PMBOnline', [laravel, php]),
+    new Project(sportgather, 'Sportgather', 'Sportgather is a sports enthusiast platform for recommendations of nearby venues and online venue booking.', '', [react, tailwind, sass]),
     new Project(trading, 'Trading Watcher', 'Trading watcher is a private dashboard created to monitor and adjust crypto coins according to user needs.', '', [javascript, react, sass]),
     new Project(twonana, 'Twonana Portfolio', 'a portfolio website collection of nft assets.', '', [javascript, react, sass])
 ]

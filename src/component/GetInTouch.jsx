@@ -1,12 +1,10 @@
-import wa from '../asset/wa.png'
-
 const GetInTouch = () => {
     return (
-        <div className="contact" id='mycontact'>
+        <section className="contact" id='mycontact'>
             <span>What's next?</span>
             <h1>Get in Touch</h1>
             <p>
-                My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                My inbox is always open. Let's talk and work together!
             </p>
             <a href='https://api.whatsapp.com/send?phone=6281287475131' className="contact__cta cta">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#FCFCFC" className="w-6 h-6 contact__icon">
@@ -14,7 +12,7 @@ const GetInTouch = () => {
             </svg>
                 Say Hello!
             </a>
-        </div>
+        </section>
     )
 }
 

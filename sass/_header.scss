@@ -73,6 +73,17 @@
         }
     }
 
+    &__cta-box {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        @media only screen and (max-width: $bp-mobile) {
+            flex-direction: column;
+            align-items: stretch;
+        }
+    }
+
     &__cta {
         @media only screen and (max-width: $bp-mobile) {
             justify-content: center;

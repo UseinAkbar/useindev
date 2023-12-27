@@ -34,10 +34,41 @@
             transform: scale(.95);
         }
 
+        &-primary {
+            background-color: $color-font-primary;
+            color: $color-base;
+        }
+
+        &__download-white {
+            display: inline-block;
+        }
+
+        &__download-black {
+            display: none;
+        }
+
         @media only screen and (max-width: $bp-mobile) {
             background-color: $color-font-primary;
             color: $color-base;
             font-size: 2rem;
+
+            &-secondary {
+                background-color: $color-base;
+                color: $color-font-primary;
+
+                &:hover {
+                    background-color: $color-base;
+                    color: $color-font-primary;
+                }
+            }
+
+            &__download-white {
+                display: none;
+            }
+
+            &__download-black {
+                display: inline-block;
+            }
 
             img {
                 width: 3rem;
