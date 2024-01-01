@@ -1,6 +1,6 @@
 const GetInTouch = () => {
     return (
-        <section className="contact" id='mycontact'>
+        <section className="contact" id='contact'>
             <span>What's next?</span>
             <h1>Get in Touch</h1>
             <p>

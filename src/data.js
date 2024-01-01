@@ -58,7 +58,7 @@ const otherProject = [
     new Project(tvmaze, 'Vue TV Maze API', 'an API based website to display tv programs using TVMaze API as an internship challenge assignment.', 'https://vue-tvmaze-api.vercel.app/', [vue, javascript, css]),
     new Project(gostorage, 'GoStorage', 'GoStorage is a warehouse rental platform created as an initial certification task by BNSP. Among the features are user & admin auth, warehouse rental CRUD, and rental returns.', 'https://github.com/UseinAkbar/LSP-GoStorage', [laravel, php]),
     new Project(pmbonline, 'PMB Online', 'PMB Online is a simple platform for new student registration created as a practical certification assignment by BNSP. Among the features are user & admin auth, registration CRUD, and registrant CRUD.', 'https://github.com/UseinAkbar/LSP-PMBOnline', [laravel, php]),
-    new Project(sportgather, 'Sportgather', 'Sportgather is a sports enthusiast platform for recommendations of nearby venues and online venue booking.', '', [react, tailwind, sass]),
+    new Project(sportgather, 'Sportgather', 'Sportgather is a sports enthusiast platform for recommendations of nearby venues and online venue booking.', '', [react, tailwind]),
     new Project(trading, 'Trading Watcher', 'Trading watcher is a private dashboard created to monitor and adjust crypto coins according to user needs.', '', [javascript, react, sass]),
     new Project(twonana, 'Twonana Portfolio', 'a portfolio website collection of nft assets.', '', [javascript, react, sass])
 ]

@@ -3,7 +3,7 @@ import OtherProject from "./OtherProject"
 
 const Project = () => {
     return (
-        <section className="project" id="myprojects">
+        <section className="project" id="projects">
             <MainProject />
             <OtherProject />
         </section>

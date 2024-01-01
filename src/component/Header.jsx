@@ -12,7 +12,7 @@ const Header = () => {
         <header className="header">
             <img src={banner} alt="Usein Akbar" className="header__img header__img--desktop" />
             <img src={banner_mobile} alt="Usein Akbar" className="header__img header__img--mobile" />
-            <a href="#myprojects" className="header__nav-project">My Projects</a>
+            <a href="#projects" className="header__nav-project">My Projects</a>
             <div className="gutter"></div>
             <Marquee className="header__skill" speed={30}>
                 {skills.map((item, i) => {
