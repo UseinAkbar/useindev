@@ -6,10 +6,10 @@ const Footer = () => {
             <a href='/' className="footer__icon">Usein.</a>
             <div className="footer__box">
                 {contacts.map((item, i) => {
-                    const {image, url} = item
+                    const {image, title, url} = item
                     return (
                         <a href={url} key={i} className="footer__link">
-                            <img src={image} alt="" className="footer__img"/>
+                            <img src={image} alt={title} className="footer__img"/>
                         </a>
                     )
                 })}

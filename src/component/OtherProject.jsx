@@ -10,7 +10,7 @@ const OtherProject = () => {
                 return (
                     <div className="project__other" key={title}>
                         <div className='project__other-box'>
-                            <img src={image} alt="" className="project__other-banner"/>
+                            <img src={image} alt={title} className="project__other-banner"/>
                         </div>
                         <div className="project__other-sub">
                             <h1 className="project__other-title">{title}</h1>
@@ -18,13 +18,13 @@ const OtherProject = () => {
                             <div className="project__other-stack">
                                 {stack.map((item, i) => {
                                     return (
-                                        <img src={item} alt="" key={i} className='project__other-icon' />
+                                        <img src={item} alt="Skill Icon" key={i} className='project__other-icon' />
                                     )
                                 })}               
                             </div> 
                             {url ? 
                             <a href={url} className="project__other-cta cta" target='_blank' rel='noreferrer'>
-                                <img src={link} alt="" />
+                                <img src={link} alt={title} />
                                 Visit Project
                             </a> :
                             <button className="project__other-cta cta">On Progress</button>

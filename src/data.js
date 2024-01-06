@@ -40,8 +40,9 @@ class Project {
 }
 
 class Contact {
-    constructor(image, url) {
+    constructor(image, title, url) {
         this.image = image
+        this.title = title
         this.url = url
     }
 }
@@ -64,9 +65,9 @@ const otherProject = [
 ]
 
 const contacts = [
-    new Contact(linkedin, 'https://www.linkedin.com/in/usein-akbar-896379206/'),
-    new Contact(gh, 'https://github.com/UseinAkbar'),
-    new Contact(instagram, 'https://www.instagram.com/useinakbarr/')
+    new Contact(linkedin, 'Linkedin', 'https://www.linkedin.com/in/usein-akbar-896379206/'),
+    new Contact(gh, 'Github', 'https://github.com/UseinAkbar'),
+    new Contact(instagram, 'Instagram', 'https://www.instagram.com/useinakbarr/')
 ]
 
 export {skills, mainProject, otherProject, contacts}
