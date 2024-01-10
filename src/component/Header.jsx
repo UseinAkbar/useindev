@@ -4,8 +4,8 @@ import banner_mobile from '../asset/banner_mobile.png'
 import download from '../asset/download.png'
 import download_secondary from '../asset/download-secondary.png'
 import { skills } from '../data'
-import portfolio from '../Usein Akbar_Front-End Portfolio_2023.pdf'
-import cv from '../CV_Usein Akbar.pdf'
+import portfolio from '../Usein Akbar_Portfolio.pdf'
+import cv from '../Usein Akbar_CV.pdf'
 
 const Header = () => {
     return (
