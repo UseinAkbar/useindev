@@ -27,7 +27,7 @@ import pmbonline from '../src/asset/pmbonline.png'
 import sportgather from '../src/asset/sportgather.png'
 
 
-const skills = [html, css, javascript, sass, tailwind, react, vue, nextjs, git, github, npm]
+const skills = [html, css, javascript, sass, tailwind, react, nextjs, git, github, npm]
 
 class Project {
     constructor(image, title, desc, url, stack) {

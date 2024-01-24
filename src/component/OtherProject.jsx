@@ -22,12 +22,11 @@ const OtherProject = () => {
                                     )
                                 })}               
                             </div> 
-                            {url ? 
+                            {url && 
                             <a href={url} className="project__other-cta cta" target='_blank' rel='noreferrer'>
                                 <img src={link} alt={title} />
                                 Visit Project
-                            </a> :
-                            <button className="project__other-cta cta">On Progress</button>
+                            </a> 
                             }
                         </div>
                     </div>
