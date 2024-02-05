@@ -20,11 +20,14 @@
             transition: .15s ease;
         }
 
+        &-primary img {
+            width: 3.5rem;
+        }
+        
         &:hover {
             background-color: $color-font-primary;
             color: $color-base;
-
-
+            
             img {
                 width: 3.5rem;
             }

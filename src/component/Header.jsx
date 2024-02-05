@@ -22,17 +22,17 @@ const Header = () => {
                 })}
             </Marquee>
             <p className="header__desc">
-            Hello👋 My name is Usein Akbar and I'm a Front-End Developer. Currently studying at Telkom University majoring in Information Systems. I have the ability to develop responsive and interactive applications, represent UI design in code, and integrate data from APIs.
+            Hello👋 My name is Usein Akbar and I'm a Front-End Developer. Currently studying at Telkom University majoring in Information System. I have the ability to develop responsive and interactive applications, represent UI design in code, and integrate data with APIs.
             <br />
             <br />
             Overall, I'm a dedicated and passionate front-end developer who is always looking to improve my skills and deliver high-quality applications, so let's work together!
             </p>
             <div className='header__cta-box'>
-                <a href={cv} download={'CV_Usein Akbar'} className="header__cta cta cta-primary">
+                <a href={cv} download={'Usein Akbar_CV'} className="header__cta cta cta-primary">
                     <img src={download} alt="" />
                     Download CV
                 </a>
-                <a href={portfolio} download={'Usein Akbar_Front-End Portfolio_2023'} className="header__cta cta cta-secondary">
+                <a href={portfolio} download={'Usein Akbar_Portfolio'} className="header__cta cta cta-secondary">
                     <img src={download} alt="" className='cta__download-white' />
                     <img src={download_secondary} alt="" className='cta__download-black' />
                     Download Portfolio

@@ -14,7 +14,7 @@ const Footer = () => {
                     )
                 })}
             </div>
-            <span className="footer__note">Created by Usein Akbar</span>
+            <span className="footer__note">Created by Usein.</span>
         </footer>
     )
 }

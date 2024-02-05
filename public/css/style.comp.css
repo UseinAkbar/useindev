@@ -3,7 +3,7 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
-@media only screen and (max-width: 50em) {
+@media only screen and (max-width: 51.25em) {
   html {
     font-size: 56.25%;
   }
@@ -106,6 +106,9 @@ footer {
 .cta img {
   width: 0;
   transition: 0.15s ease;
+}
+.cta-primary img {
+  width: 3.5rem;
 }
 .cta:hover {
   background-color: #292929;
@@ -372,16 +375,23 @@ footer {
 .project__main-cta:hover img, .project__other-cta:hover img {
   width: 2.4rem;
 }
-@media only screen and (max-width: 31.25em) {
+@media only screen and (max-width: 51.25em) {
   .project__main-cta, .project__other-cta {
-    justify-self: stretch;
-    justify-content: center;
+    background-color: #292929;
+    color: #FCFCFC;
+    font-size: 2rem;
   }
   .project__main-cta img, .project__other-cta img {
     width: 2.4rem;
   }
 }
 @media only screen and (max-width: 31.25em) {
+  .project__main-cta, .project__other-cta {
+    justify-self: stretch;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 51.25em) {
   .project__main, .project__other {
     grid-template-columns: 1fr;
     grid-gap: 2rem;
@@ -390,7 +400,7 @@ footer {
 .project__main {
   grid-gap: 8rem;
 }
-@media only screen and (max-width: 31.25em) {
+@media only screen and (max-width: 51.25em) {
   .project__main {
     grid-gap: 2rem;
   }
@@ -436,7 +446,7 @@ footer {
   grid-column: 1/2;
   grid-row: 1/2;
 }
-@media only screen and (max-width: 31.25em) {
+@media only screen and (max-width: 51.25em) {
   .project__main:nth-of-type(odd) .project__main-banner,
   .project__main:nth-of-type(odd) .project__main-sub {
     grid-column: auto;
