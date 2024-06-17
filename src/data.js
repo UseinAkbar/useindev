@@ -65,7 +65,7 @@ const otherProject = [
 ]
 
 const contacts = [
-    new Contact(linkedin, 'Linkedin', 'https://www.linkedin.com/in/usein-akbar-896379206/'),
+    new Contact(linkedin, 'Linkedin', 'https://www.linkedin.com/in/usein-akbar/'),
     new Contact(gh, 'Github', 'https://github.com/UseinAkbar'),
     new Contact(instagram, 'Instagram', 'https://www.instagram.com/useinakbarr/')
 ]
