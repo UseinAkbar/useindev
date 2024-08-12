@@ -25,7 +25,7 @@ const Header = () => {
             Hello👋, My name is Usein Akbar and I'm a Frontend Developer. Final year student of Telkom University majoring in Information System. I have the ability to developed responsive and interactive web applications, represented UI design in code, and integrated data with APIs.
             <br />
             <br />
-            Overall, I'm a dedicated and passionate front-end developer who is always looking to improve my skills and deliver high-quality applications, so let's work together!
+            Overall, I'm a dedicated and passionate frontend developer who is always looking to improve my skills and deliver high-quality applications, so let's work together!
             </p>
             <div className='header__cta-box'>
                 <a href={cv} download={'Usein Akbar_CV'} className="header__cta cta cta-primary">
