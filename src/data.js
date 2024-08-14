@@ -4,6 +4,9 @@ import git from '../src/asset/skills/git.png'
 import github from '../src/asset/skills/github.png'
 import javascript from '../src/asset/skills/javascript.png'
 import react from '../src/asset/skills/react.png'
+import reactquery from '../src/asset/skills/reactquery.png'
+import reduxIcon from '../src/asset/skills/redux.png'
+import midtrans from '../src/asset/skills/midtrans.png'
 import vue from '../src/asset/skills/vue.png'
 import tailwind from '../src/asset/skills/tailwind.png'
 import sass from '../src/asset/skills/sass.png'
@@ -18,6 +21,7 @@ import trading from '../src/asset/trading.png'
 import teknofest from '../src/asset/teknofest.png'
 import gurubintang from '../src/asset/gurubintang.png'
 import diesnatalis from '../src/asset/diesnatalis.png'
+import bic from '../src/asset/bic.png'
 import weatherio from '../src/asset/weatherio.png'
 import nexter from '../src/asset/nexter.png'
 import twonana from '../src/asset/twonana.png'
@@ -54,6 +58,7 @@ const mainProject = [
 ]
 
 const otherProject = [
+    new Project(bic, 'Batununggal Indah Club', 'A web application as a solution to facilitate customers in booking and admin in managing the operations of the Batununggal Indah Club sports center.', 'https://bic-pengunjung.vercel.app/', [react, tailwind, reduxIcon, reactquery]),
     new Project(weatherio, 'Weatherio', 'an API based web apps to track and search different weather in different city. Among the features are weather search by city and weather search based on device location.', 'https://weatherio.vercel.app/', [javascript, react, sass]),
     new Project(nexter, 'Nexter', 'Nexter is a website for realtors to promote the houses they sell. This is a course based project from Udemy with some UI improvements.', 'https://nexter01.netlify.app/', [html, css, javascript, sass]),
     new Project(tvmaze, 'Vue TV Maze API', 'an API based website to display tv programs using TVMaze API as an internship challenge assignment.', 'https://vue-tvmaze-api.vercel.app/', [vue, javascript, css]),
