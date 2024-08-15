@@ -31,7 +31,7 @@ import pmbonline from '../src/asset/pmbonline.png'
 import sportgather from '../src/asset/sportgather.png'
 
 
-const skills = [html, css, javascript, sass, tailwind, react, nextjs, git, github, npm]
+const skills = [html, css, javascript, sass, tailwind, react, nextjs, reduxIcon, reactquery, git, github, npm]
 
 class Project {
     constructor(image, title, desc, url, stack) {
@@ -58,7 +58,7 @@ const mainProject = [
 ]
 
 const otherProject = [
-    new Project(bic, 'Batununggal Indah Club', 'A web application as a solution to facilitate customers in booking and admin in managing the operations of the Batununggal Indah Club sports center.', 'https://bic-pengunjung.vercel.app/', [react, tailwind, reduxIcon, reactquery]),
+    new Project(bic, 'Batununggal Indah Club', 'A web application as a solution to facilitate customers in booking and admin in managing the operations of the Batununggal Indah Club sports center.', 'https://bic-pengunjung.vercel.app/', [react, tailwind, reduxIcon, reactquery, midtrans]),
     new Project(weatherio, 'Weatherio', 'an API based web apps to track and search different weather in different city. Among the features are weather search by city and weather search based on device location.', 'https://weatherio.vercel.app/', [javascript, react, sass]),
     new Project(nexter, 'Nexter', 'Nexter is a website for realtors to promote the houses they sell. This is a course based project from Udemy with some UI improvements.', 'https://nexter01.netlify.app/', [html, css, javascript, sass]),
     new Project(tvmaze, 'Vue TV Maze API', 'an API based website to display tv programs using TVMaze API as an internship challenge assignment.', 'https://vue-tvmaze-api.vercel.app/', [vue, javascript, css]),
