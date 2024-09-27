@@ -22,7 +22,7 @@ const Header = () => {
                 })}
             </Marquee>
             <p className="header__desc">
-            Hello👋, My name is Usein Akbar and I'm a Frontend Developer. Final year student of Telkom University majoring in Information System. I have the ability to developed responsive and interactive web applications, represented UI design in code, and integrated data with APIs.
+            Hello👋, My name is Usein Akbar and I'm a Frontend Developer. Fresh graduate of Telkom University majoring in Information System. I have the ability to developed responsive and interactive web applications, represented UI design in code, and integrated data with APIs.
             <br />
             <br />
             Overall, I'm a dedicated and passionate frontend developer who is always looking to improve my skills and deliver high-quality applications, so let's work together!
