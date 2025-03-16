@@ -20,10 +20,12 @@ const MainProject = () => {
                                     )
                                 })}               
                             </div> 
+                            {url &&
                             <a href={url} className="project__main-cta cta" target='_blank' rel='noreferrer'>
                                 <img src={link} alt={title} />
                                 Visit Project
                             </a>
+                            }
                         </div>
                     </div>
                 )

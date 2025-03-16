@@ -14,6 +14,7 @@ import npm from '../src/asset/skills/npm.png'
 import laravel from '../src/asset/skills/Laravel.png'
 import php from '../src/asset/skills/PHP.png'
 import nextjs from '../src/asset/skills/Nextjs.png'
+import typescript from '../src/asset/skills/typescript.png'
 import instagram from '../src/asset/instagram.svg'
 import gh from '../src/asset/gh.svg'
 import linkedin from '../src/asset/linkedin.svg'
@@ -29,9 +30,10 @@ import tvmaze from '../src/asset/vue-tvmaze.png'
 import gostorage from '../src/asset/gostorage.png'
 import pmbonline from '../src/asset/pmbonline.png'
 import sportgather from '../src/asset/sportgather.png'
+import skopi from '../src/asset/skopi.png'
 
 
-const skills = [html, css, javascript, sass, tailwind, react, nextjs, reduxIcon, reactquery, git, github, npm]
+const skills = [html, css, javascript, typescript, sass, tailwind, react, nextjs, vue, reduxIcon, reactquery, git, github, npm]
 
 class Project {
     constructor(image, title, desc, url, stack) {
@@ -53,6 +55,7 @@ class Contact {
 
 const mainProject = [
     new Project(teknofest, 'Teknofest Proclub Web Portal', 'Web portal made for Proclub Telkom University recruitment registration 2022.', 'https://github.com/helloproclub/teknofest-web-fe/tree/master', [javascript, react, sass]),
+    new Project(skopi, 'Skopi Kemenkop', 'An ideas platform for mentoring and business acceleration of MSMEs under the Ministry of Cooperatives and SMEs.', '', [javascript, typescript, react, tailwind, reactquery]),
     new Project(gurubintang, 'Guru Bintang', 'a MVP product for the development of education and skills for honorary teachers as a condition for the Proclub Telkom University probation phase 2021. Among the features are user and admin auth, course CRUD, course transactions, course access, certificate printing, and course purchase history.', 'https://gurubintang.vercel.app/', [javascript, react, sass]),
     new Project(diesnatalis, 'Dies Natalis of HIMA Fisika Unpad', 'An anniversary web platform for the Association of Physics Departments, Padjadjaran University. Among the features are live stream & live chat embedded YouTube, journey of association, and exhibition display.', 'https://unpad-project.vercel.app/', [javascript, react, sass]),
 ]
@@ -65,7 +68,7 @@ const otherProject = [
     new Project(gostorage, 'GoStorage', 'GoStorage is a warehouse rental platform created as an initial certification task by BNSP. Among the features are user & admin auth, warehouse rental CRUD, and rental returns.', 'https://github.com/UseinAkbar/LSP-GoStorage', [laravel, php]),
     new Project(pmbonline, 'PMB Online', 'PMB Online is a simple platform for new student registration created as a practical certification assignment by BNSP. Among the features are user & admin auth, registration CRUD, and registrant CRUD.', 'https://github.com/UseinAkbar/LSP-PMBOnline', [laravel, php]),
     new Project(sportgather, 'Sportgather', 'Sportgather is a sports enthusiast platform for recommendations of nearby venues and online venue booking. Among the features are user auth, CRUD user, CRUD sports field booking, booking payments, and tracking booking status.', '', [react, tailwind]),
-    new Project(trading, 'Trading Watcher', 'Trading watcher is a private dashboard created to monitor and adjust crypto coins according to user needs. Among the features are user auth, CRUD of watcher and alert coins, logs, statistics, etc. ', '', [javascript, react, sass]),
+    new Project(trading, 'Trading Watcher', 'Trading watcher is a private dashboard created to monitor and adjust crypto coins according to user needs. Among the features are user auth, CRUD of watcher and alert coins, logs, statistics, etc.', '', [javascript, react, sass]),
     new Project(twonana, 'Twonana Portfolio', 'A portfolio website collection of nft assets. Among the features are admin auth, CRUD nfts, and auction schedule.', '', [javascript, react, sass])
 ]
 
